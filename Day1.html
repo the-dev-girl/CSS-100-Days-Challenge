@@ -1,0 +1,104 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<style>
+    .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  overflow: hidden;
+  background: linear-gradient(to top right, #184af0 0%, #6260dd 50%, #e79595 100%);
+  // color: #ffffff;
+  font-family: Poppins, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  background-color: #333;
+  border-radius: 20px;
+  width: 240px;
+  height: 280px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+
+.title {
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.weekday {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: Poppins;
+  margin-bottom: 10px;
+}
+
+.dateyear {
+  font-size: 0.75rem;
+  font-family: Poppins;
+  margin: 10px 0px 0px 0px;
+}
+
+.separator {
+  width: 180px;
+}
+
+.tasks {
+  list-style: none;
+  color: #ffffff;
+  font-size: 13px;
+  
+}
+
+li {
+  margin: 1.2rem 0;
+}
+
+
+input {
+  float: right;
+  margin-right: 30px;
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+}
+</style>
+
+<div class="frame">
+  <div class="center">
+    <div class="List">
+      <div class=title>
+        <p class="weekday"><strong>Tuesday</strong></p>
+        <p class="dateyear">January 5, 2020</p>
+      </div>
+  <hr class="separator">
+    <ul class="tasks">
+      <li>
+        <label for="create">Create a List</label>
+        <input id="create" name="create" type="radio">
+      </li>
+      <li>
+        <label for="create">Complete first task</label>
+        <input id="complete" name="complete" type="radio">
+      </li>
+      <li>
+        <label for="create">Write some CSS code</label>
+        <input id="write" name="write" type="radio">
+      </li>
+      <li>
+        <label for="create">Amaze the world</label>
+        <input id="write" name="write" type="radio">
+      </li>
+      </div>    
+  </div>
+</div>
